@@ -30,7 +30,7 @@ if (b3 === "test") {
 alert(word3);
 
 */
-
+console.log("Task3_________________________________")
 // 3)Якщо змінна більше 10 - відніміть 5
 //менше - додайте 5, результат виведіть в консоль
 //Перевірте це на варіантах 1, 10, 13.
@@ -41,16 +41,17 @@ let c = 13;
 //     c+= 5;
 // };
 // console.log(c);
-
 c>10 ? c-=5 //c=c>10 краще - щоб перевірка коду не сварилась на присвоєння в середині тернарного оператора
     : c<10 ? c+= 5
     : c;
 console.log(c);
 
+console.log("\nTask4_________________________________")
 //4)Зробіть сервіс який отримує число від 1 до 12
 // виведіть місяць який дорівнює числу
 
-let m = 13;
+//let m = 13;
+const m = Math.floor(Math.random() * 12) + 1;
 switch(m) {
     case 1: 
         console.log("January");
@@ -89,7 +90,7 @@ switch(m) {
         console.log("December");
         break;
     default:
-        console.log("Input number in range [1...12]")                                                                                     
+        console.log("Input number in range [1...12]");                                                                                     
 }
 
 
