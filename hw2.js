@@ -93,6 +93,15 @@ switch(m) {
         console.log("Input number in range [1...12]");                                                                                     
 }
 
-
-//5)Зробіть сервіс яки отримує тризначне число
+console.log("\nTask5_________________________________")
+//5)Зробіть сервіс який отримує тризначне число
 //Поверніть користувачу сумму цих чисел
+const xyz = Math.floor(Math.random() * 900) + 100;
+console.log(xyz);
+const first = Math.floor(xyz/100);
+//const second = Math.floor((xyz/100 - Math.floor(xyz/100)) * 10);//оптимізовуєм (%)
+const second = Math.floor(xyz/10) % 10;
+//const third = Math.round((xyz/10 - Math.floor(xyz/10))*10);//оптимізовуєм через %
+const third = xyz % 10;
+const sum = first + second + third;          
+console.log(`${first} + ${second} + ${third} = ${sum}`);
